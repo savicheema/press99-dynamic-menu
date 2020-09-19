@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        App
+        <div className="title">Press9 Dynamic Menu</div>
         <DynamicMenu />
       </div>
     );

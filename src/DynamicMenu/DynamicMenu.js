@@ -1,7 +1,7 @@
 import React from "react";
 import "./dynamic-menu.css";
 
-import MenuHandler from "./MenuHandler";
+import MenuHandler from "../MenuHandler/MenuHandler";
 
 class DynamicMenu extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class DynamicMenu extends React.Component {
         id: 1,
         name: "Zone 1",
         children: {
-          level_name: "building",
+          levelName: "building",
           entries: [
             {
               id: 1,
@@ -36,7 +36,7 @@ class DynamicMenu extends React.Component {
         id: 2,
         name: "Zone 2",
         children: {
-          level_name: "building",
+          levelName: "building",
           entries: [
             {
               id: 1,
@@ -60,7 +60,7 @@ class DynamicMenu extends React.Component {
         id: 3,
         name: "Zone 3",
         children: {
-          level_name: "building",
+          levelName: "building",
           entries: [
             {
               id: 1,
@@ -83,13 +83,13 @@ class DynamicMenu extends React.Component {
     ];
 
     this.fullMenu = {
-      level_name: "site",
+      levelName: "site",
       entries: [
         {
           id: 1,
           name: "Site 1",
           children: {
-            level_name: "zone",
+            levelName: "zone",
             entries: this.zoneEntries,
           },
         },
@@ -97,7 +97,7 @@ class DynamicMenu extends React.Component {
           id: 2,
           name: "Site 2",
           children: {
-            level_name: "zone",
+            levelName: "zone",
             entries: this.zoneEntries,
           },
         },
@@ -105,7 +105,7 @@ class DynamicMenu extends React.Component {
           id: 3,
           name: "Site 3",
           children: {
-            level_name: "zone",
+            levelName: "zone",
             entries: this.zoneEntries,
           },
         },

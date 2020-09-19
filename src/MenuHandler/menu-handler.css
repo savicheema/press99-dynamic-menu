@@ -1,0 +1,45 @@
+.menu-handler {
+  background-color: black;
+  color: white;
+}
+
+.menu-handler .menu {
+  /* margin: 8px 0; */
+  margin-bottom: 8px;
+  padding: 4px;
+  /* display: none; */
+}
+.menu-handler .menu.site {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 1; */
+}
+.menu-handler .menu.zone .entries {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+}
+.menu-handler .menu.zone .entries .entry {
+  padding: 4px;
+}
+.menu-handler .menu.building {
+  display: flex;
+  flex-direction: column;
+}
+.menu-handler .menu.building .entries {
+  border: 1px dashed gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-handler .menu .level {
+  color: red;
+  padding: 4px;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-handler .menu.zone .entries {
+    flex-direction: column;
+  }
+}
