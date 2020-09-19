@@ -18,11 +18,11 @@ class MenuHandler extends React.Component {
     });
     console.log("GOT CHILDREN", showMenus);
 
-    showMenus.forEach((menu) => {
-      console.log("menu", menu.ref);
-      if (!menu.ref.current) return;
-      menu.ref.current.show(menu.name);
-    });
+    // showMenus.forEach((menu) => {
+    //   console.log("menu", menu.ref);
+    //   if (!menu.ref.current) return;
+    //   menu.ref.current.show(menu.name);
+    // });
   };
 
   buildMenu = (parentMenuID, parentName, menu) => {
